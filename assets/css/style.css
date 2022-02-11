@@ -1,0 +1,55 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    width: 40%;
+    margin: 2% auto;  
+    font-size: 1.1rem;  
+}
+
+fieldset {
+    border-radius: 5px;
+    background: lightblue;
+    padding: 5%;
+}
+
+select, input[type=submit] {
+    text-align: center;    
+    margin: 2% auto;
+} 
+
+select {
+    width: 80%;
+}
+
+input[type=submit] {    
+    width: 45%;
+    margin: 5% auto;
+    border-radius: 5px;
+    padding: 2%;
+    text-align: center;  
+}
+
+#output {
+    text-align: center;
+}
+
+.flexi {
+    display: flex;
+    justify-content: center;
+}
+
