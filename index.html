@@ -18,19 +18,19 @@
         <fieldset>
             <form id="myForm" action="" onsubmit="return false ">
                 <h3>Was soll berechnet werden?</h3>
-                <input type="radio" name="net_brut" id="vat_add" checked onchange="check()">
+                <input type="radio" name="net_brut" id="vat_add" checked onchange="check()" onchange="calc()">
                 <label for="vat_add">Mehrwertsteuer aufschlagen</label>
                 <p class="netTxt">(Netto zu Brutto)</p>
                 <br>
-                <input type="radio" name="net_brut" id="vat_sub" onchange="check()">
+                <input type="radio" name="net_brut" id="vat_sub" onchange="check()" onchange="calc()">
                 <label for="vat_sub">Mehrwertsteuer abziehen</label>
                 <p class="netTxt"> (Brutto zu Netto)</p>
                 <br><br>
                 <label for="mw_percent">Mehrwertsteuersatz</label>
                 <br>
-                <input type="radio" name="percent" id="nineteen" checked>
+                <input type="radio" name="percent" id="nineteen" checked onchange="calc()">
                 <label for="nineteen">19 %</label>
-                <input type="radio" name="percent" id="seven">
+                <input type="radio" name="percent" id="seven" onchange="calc()">
                 <label for="seven">7 %</label>
                 <br><br>
                 <label for="netto" id="toggle_net">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</label>
