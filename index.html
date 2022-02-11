@@ -18,10 +18,10 @@
         <fieldset>
             <form id="myForm" action="" onsubmit="return false ">
                 <p>Was soll berechnet werden?</p>
-                <input type="radio" name="net_brut" id="vat_add" checked>
+                <input type="radio" name="net_brut" id="vat_add" checked onchange="check()">
                 <label for="vat_add">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
                 <br>
-                <input type="radio" name="net_brut" id="vat_sub">
+                <input type="radio" name="net_brut" id="vat_sub" onchange="check()">
                 <label for="vat_sub">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
                 <br><br>
                 <label for="mw_percent">Mehrwertsteuersatz</label>

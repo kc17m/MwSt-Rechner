@@ -29,7 +29,16 @@ console.log(toggleResult);
 //Ergebnis als Ausgabe in output_gross: let sum
 
 
-
+let check = () => {
+    if (vat_add.checked == true) {
+        toggleTxt.innerHTML = `Nettobetrag (Preis ohne Mehrwertsteuer) in Euro`;
+        toggleResult.innerHTML = `Bruttobetrag (Endpreis)`;
+    }
+    else {
+        toggleTxt.innerHTML = `Bruttopreis (Preis inklusive Mehrwertsteuer in Euro)`;
+        toggleResult.innerHTML = `Nettobetrag`;
+    }
+}
 
 
 let calc = () => {
