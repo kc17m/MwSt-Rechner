@@ -17,12 +17,14 @@
 
         <fieldset>
             <form id="myForm" action="" onsubmit="return false ">
-                <p>Was soll berechnet werden?</p>
+                <h3>Was soll berechnet werden?</h3>
                 <input type="radio" name="net_brut" id="vat_add" checked onchange="check()">
-                <label for="vat_add">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                <label for="vat_add">Mehrwertsteuer aufschlagen</label>
+                <p class="netTxt">(Netto zu Brutto)</p>
                 <br>
                 <input type="radio" name="net_brut" id="vat_sub" onchange="check()">
-                <label for="vat_sub">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                <label for="vat_sub">Mehrwertsteuer abziehen</label>
+                <p class="netTxt"> (Brutto zu Netto)</p>
                 <br><br>
                 <label for="mw_percent">Mehrwertsteuersatz</label>
                 <br>
@@ -39,13 +41,13 @@
                     <input type="submit" value="Berechnen" onclick="calc()">
                 </div>
                 <br><br>
-                <h4>Ergebnis</h4>
-                <h3>Mehrwertsteuerbetrag</h3>
-                <h3><span id="output_vat">0.0</span> €</h3>
-                <br>
-                <br>
-                <h4 id="toggle_result">Bruttobetrag (Endpreis)</h4>
-                <h3><span id="output_gross">0.0</span> €</h3>
+                <h4>Ergebnis</h3>
+                    <h5>Mehrwertsteuerbetrag</h5>
+                    <h5><span id="output_vat">0.0</span> €</h5>
+                    <br>
+                    <br>
+                    <h5 id="toggle_result">Bruttobetrag (Endpreis)</h5>
+                    <h5><span id="output_gross">0.0</span> €</h5>
             </form>
         </fieldset>
 

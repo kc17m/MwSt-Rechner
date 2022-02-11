@@ -52,8 +52,8 @@ let calc = () => {
     let vat19 = input_value * .19;
 
     if (vat_add.checked == true) {
-        toggleTxt.innerHTML = `Nettobetrag (Preis ohne Mehrwertsteuer) in Euro`;
-        toggleResult.innerHTML = `Bruttobetrag (Endpreis)`;
+        // toggleTxt.innerHTML = `Nettobetrag (Preis ohne Mehrwertsteuer) in Euro`;
+        // toggleResult.innerHTML = `Bruttobetrag (Endpreis)`;
         if (nineteen.checked == true) {
             outputVat.innerHTML = (vat19).toFixed(2);
             outputGross.innerHTML = (input_value + vat19).toFixed(2);
@@ -65,8 +65,8 @@ let calc = () => {
     }
 
     else {
-        toggleTxt.innerHTML = `Bruttopreis (Preis inklusive Mehrwertsteuer in Euro)`;
-        toggleResult.innerHTML = `Nettobetrag`;
+        // toggleTxt.innerHTML = `Bruttopreis (Preis inklusive Mehrwertsteuer in Euro)`;
+        // toggleResult.innerHTML = `Nettobetrag`;
         if (nineteen.checked == true) {
             outputVat.innerHTML = (vat19).toFixed(2);
             outputGross.innerHTML = (input_value - vat19).toFixed(2);
