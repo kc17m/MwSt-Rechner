@@ -35,7 +35,7 @@ let check = () => {
         toggleResult.innerHTML = `Bruttobetrag (Endpreis)`;
     }
     else {
-        toggleTxt.innerHTML = `Bruttopreis (Preis inklusive Mehrwertsteuer in Euro)`;
+        toggleTxt.innerHTML = `Bruttopreis (Preis inkl. Mehrwertsteuer in Euro)`;
         toggleResult.innerHTML = `Nettobetrag`;
     }
 }
